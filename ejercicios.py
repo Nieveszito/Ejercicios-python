@@ -1,6 +1,5 @@
 import tkinter as tk
 
-# Clase base para los ejercicios
 class EjercicioBase:
     def __init__(self, frame, regresar_callback):
         self.frame = frame
@@ -221,8 +220,8 @@ class Ejercicio10(EjercicioBase):
         horas_extras = int(self.entry_horas_extras.get())
         hijos = int(self.entry_hijos.get())
         
-        pago_hora_normal = 10  # Suponiendo que el pago por hora normal es 10 unidades
-        pago_hora_extra = pago_hora_normal * 1.5  # Pago por hora extra es 50% más
+        pago_hora_normal = 10
+        pago_hora_extra = pago_hora_normal * 1.5  
         bonificacion_hijos = hijos * 0.5
         
         pago_total = (horas_normales * pago_hora_normal) + (horas_extras * pago_hora_extra) + bonificacion_hijos
